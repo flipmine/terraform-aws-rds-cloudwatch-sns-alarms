@@ -37,3 +37,7 @@ output "swap_usage_too_high_name" {
   description = "Average database swap usage over last 10 minutes too high, performance may suffer"
   value       = aws_cloudwatch_metric_alarm.swap_usage_too_high.alarm_name
 }
+
+output "disk_queue_depth_too_high_metric_query" {
+  value       = aws_cloudwatch_metric_alarm.disk_queue_depth_too_high.metric_query
+}
